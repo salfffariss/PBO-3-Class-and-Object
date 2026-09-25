@@ -32,5 +32,10 @@ public class Main {
         System.out.println("P4 dapat diproses: " + p4.dapatDiproses());
 
         System.out.println("\nTotal pesanan dibuat: " + Pesanan.getJumlahPesananDibuat());
+
+        Kasir kasir = new Kasir();
+        System.out.println("\nUji Kasir:");
+        kasir.proses(p1);
+        kasir.proses(p2);
     }
 }
