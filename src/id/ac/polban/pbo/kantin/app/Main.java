@@ -24,5 +24,8 @@ public class Main {
         System.out.println("Nomor P2: " + p2.getNomor());
         System.out.println("Nomor P3: " + p3.getNomor());
 
+        System.out.println("\n" + p1.ringkasan());
+        System.out.println(p2.ringkasan());
+
     }
 }

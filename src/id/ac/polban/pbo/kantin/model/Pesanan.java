@@ -1,7 +1,7 @@
 package id.ac.polban.pbo.kantin.model;
 
 public class Pesanan {
-    private int nextNumber = 1;
+    private static int nextNumber = 1;
     private int nomor;
     private Mahasiswa pemesan;
     private MenuItem item;
@@ -24,5 +24,9 @@ public class Pesanan {
 
     public int getNomor() {
         return nomor;
+    }
+
+    public String ringkasan() {
+        return "Pesanan #" + nomor + " | Pemesan: " + pemesan.getNama() + " (" + pemesan.getNim() + ") | Menu: " + item.getNama() + " x" + jumlah + " | Total: Rp" + hitungTotal();
     }
 }
