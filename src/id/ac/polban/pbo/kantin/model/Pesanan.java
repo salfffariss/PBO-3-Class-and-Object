@@ -7,7 +7,6 @@ public class Pesanan {
     private MenuItem item;
     private int jumlah;
 
-    // Constructor
     public Pesanan(Mahasiswa pemesan, MenuItem item, int jumlah) {
         this.nomor = nextNumber++; 
         this.pemesan = pemesan;
