@@ -1,7 +1,7 @@
 package id.ac.polban.pbo.kantin.model;
 
 public class Pesanan {
-    private static int nextNumber = 1;
+    private int nextNumber = 1;
     private int nomor;
     private Mahasiswa pemesan;
     private MenuItem item;
