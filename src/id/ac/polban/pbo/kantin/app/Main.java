@@ -28,5 +28,9 @@ public class Main {
         System.out.println(p2.ringkasan());
         System.out.println(p3.ringkasan());
 
+        Pesanan p4 = new Pesanan(m1, nasi, 0);
+        System.out.println("P4 dapat diproses: " + p4.dapatDiproses());
+
+        System.out.println("\nTotal pesanan dibuat: " + Pesanan.getJumlahPesananDibuat());
     }
 }

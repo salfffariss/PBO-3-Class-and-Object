@@ -41,4 +41,8 @@ public class Pesanan {
     public String ringkasan() {
         return "Pesanan #" + nomor + " | Pemesan: " + pemesan.getNama() + " (" + pemesan.getNim() + ") | Menu: " + item.getNama() + " x" + jumlah + " | Total: Rp" + hitungTotal();
     }
+
+    public static int getJumlahPesananDibuat() {
+        return nextNumber - 1;
+    }
 }
