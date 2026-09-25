@@ -26,6 +26,18 @@ public class Pesanan {
         return nomor;
     }
 
+    public Mahasiswa getPemesan() {
+        return pemesan;
+    }
+
+    public MenuItem getItem() {
+        return item;
+    }
+
+    public int getJumlah() {
+        return jumlah;
+    }
+
     public String ringkasan() {
         return "Pesanan #" + nomor + " | Pemesan: " + pemesan.getNama() + " (" + pemesan.getNim() + ") | Menu: " + item.getNama() + " x" + jumlah + " | Total: Rp" + hitungTotal();
     }

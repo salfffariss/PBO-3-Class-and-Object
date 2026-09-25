@@ -19,13 +19,14 @@ public class Main {
         System.out.println("Total P1: " + p1.hitungTotal());
         System.out.println("P2 dapat diproses: " + p2.dapatDiproses());
 
-        Pesanan p3 = new Pesanan(m1, nasi, 1);
+        Pesanan p3 = new Pesanan(m2, nasi, 1);
         System.out.println("\nNomor P1: " + p1.getNomor());
         System.out.println("Nomor P2: " + p2.getNomor());
         System.out.println("Nomor P3: " + p3.getNomor());
 
         System.out.println("\n" + p1.ringkasan());
         System.out.println(p2.ringkasan());
+        System.out.println(p3.ringkasan());
 
     }
 }
